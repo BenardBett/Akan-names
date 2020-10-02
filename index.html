@@ -24,14 +24,42 @@
         </div>
 
     </div>
-    <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit">
-      </form>
-    <button type="button" class="btn btn-primary">Primary</button>
+    <div class="container">
+        <form>
+            <div class="form-group">
+              <label for="century" class="labels">Century</label>
+              <input type="number" class="form-control" id="exampleInput 19" required min="1" max="30">
+            </div>
+            <div class="form-group">
+                <label for="year" class="labels">Year</label>
+              <input type="number" class="form-control" id="exampleInput 99" required min="1" max="100">
+            </div>
+              
+            <div class="form-group">
+                <label for="month" class="labels">Month</label>
+              <input type="number" class="form-control" id="exampleInput 7" required min="1" max="12">
+            </div>
+            <div class="form-group">
+                <label for="DateOfBirth" class="labels">Date of Birth</label>
+              <input type="number" class="form-control" id="exampleInput 1" required min="1" max="31">
+            </div>
+              
+           
+          <form>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>   
+          </form>
+          <a href="final"><button type="button" class="btn btn-outline-primary" name="button"
+            onclick="checkDayOfWeek();">Submit</button></a>
+    <button type="reload" onclick="window.location.reload();" class="btn btn-outline-danger">Reload</button>
+    <!-- <p id="result"></p> -->
+          
+          </form>
+    </div>
+    
+    
 
 </body>
 </html>
