@@ -13,8 +13,22 @@ h1{
 .akan-name{
     color: #fdd043;
   font-size: 30px;
+  text-align: center;
 }
 .h1{
     font-size: 40px;
   text-align: center;
 }
+.form-group{
+background-color:beige ;
+font-size: 25px;
+font-weight: bolder;
+}
+.labels{
+    color:green;
+    font-size: 25px;
+}
+/* #final{
+    color:magenta;
+    font-size: 25;
+} */
