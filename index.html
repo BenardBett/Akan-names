@@ -13,11 +13,11 @@
     <div class="container">
         <div class="jumbotron">
             <h1 class="h1"><strong>AKAN NAMES</strong></h1>
-            <p class="paragraph">The Akan people of Ghana name their children after the day of the week they were born.<br>
-               This is a web application that takes a user's birthday and calculates the day of the week<br>
+            <p class="paragraph">The Akan people of Ghana name their children after the day of the week they were born.
+               This is a web application that takes a user's birthday and calculates the day of the week
                 they were born and then depending on their gender outputs their Akan Name. </p>
-                <p class="paragraph">Children are given their first name as a 'day name' which corresponds to <br>
-                    the day in the week they were born.These "day names" have further meanings <br>
+                <p class="paragraph">Children are given their first name as a 'day name' which corresponds to 
+                    the day in the week they were born.These "day names" have further meanings 
                     concerning the soul and character of the person.</p>
                 <p class="akan-name">What is your akan name?</p>
             
@@ -28,20 +28,20 @@
         <form>
             <div class="form-group">
               <label for="century" class="labels">Century</label>
-              <input type="number" class="form-control" id="exampleInput 19" required min="1" max="30">
+              <input type="number" class="form-control" id="century" required min="1" max="30">
             </div>
             <div class="form-group">
                 <label for="year" class="labels">Year</label>
-              <input type="number" class="form-control" id="exampleInput 99" required min="1" max="100">
+              <input type="number" class="form-control" id="year" required min="1" max="100">
             </div>
               
             <div class="form-group">
                 <label for="month" class="labels">Month</label>
-              <input type="number" class="form-control" id="exampleInput 7" required min="1" max="12">
+              <input type="number" class="form-control" id="month" required min="1" max="12">
             </div>
             <div class="form-group">
                 <label for="dateOfBirth" class="labels">Date of Birth</label>
-              <input type="number" class="form-control" id="exampleInput 1" required min="1" max="31">
+              <input type="number" class="form-control" id="day" required min="1" max="31">
             </div>
               
            
@@ -51,15 +51,18 @@
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label><br>   
           </form>
-          <a href="final"><button type="button" class="btn btn-outline-primary" name="button"
-            onclick="checkDayOfWeek();">Submit</button></a>
-    <button type="reload" onclick="window.location.reload();" class="btn btn-outline-danger">Reload</button>
-    <!-- <p id="final"></p> -->
-          
-          </form>
+            <br>
+            <button type="button" class="btn btn-outline-primary" name="button"
+                    onclick="userInput();">Submit</button>
+            <button type="clear" onclick="window.location.reload();" class="btn btn-outline-danger">Reload</button>
+            <p id="result"></p>
+        </form>
     </div>
-    
-    
-<script src="./js/script.js"></script>
+    <footer class="page-footer ">
+      <p> <br>Copyright &copy 2020.All rights are reserved-<br>powered by Benard k. Bett.
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
