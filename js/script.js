@@ -35,11 +35,11 @@ function userInput(){
   }else if(dob===6){
       console.log(dob);
   }
-  if(year==""||year>2020){
+  if(year==""||year>2020 ||year<0){
       alert("please enter a valid year");
-  }else if(month=="" ||month>12){
+  }else if(month=="" ||month>12 ||month<1){
       alert("Please enter a valid month");
-  }else if(day=="" ||day>31){
+  }else if(day=="" ||day>31 ||day<0){
       alert("Please enter a valid date");
   }else if(document.getElementById("male").checked==true && document.getElementById("female").checked==false){
       alert("Your Akan name is " + maleName[dob]);
