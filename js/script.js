@@ -5,8 +5,7 @@
 
 
 function getDay (cc,yy,mm,dd){
-  return ((((cc/19)+1*cc-1)+((5*yy/4)) + ((26*(mm+1)/10)) + dd)%7)+1
-//   return(((cc/4)-2*cc-1)+((5*yy/4))+((26*(mm+1)/10)))
+  return(((cc/4)-2*cc-1)+((5*yy/4))+((26*(mm+1)/10))+ dd)%7
 }
 function userInput(){
   var century = document.getElementById("century").value;
@@ -21,9 +20,9 @@ function userInput(){
   var dob = birthDay.getDay();
 
   if(dob===0){
-    console.log(dob);;
+    console.log(dob);
   }else if(dob===1){
-      alert("Monday");
+    console.log(dob);
   }else if(dob===2){
     console.log(dob);
   }else if(dob===3){
@@ -33,7 +32,7 @@ function userInput(){
   }else if(dob===5){
     console.log(dob);
   }else if(dob===6){
-      console.log(dob);
+    console.log(dob);
   }
   if(year==""||year>2020 ||year<0){
       alert("please enter a valid year");
