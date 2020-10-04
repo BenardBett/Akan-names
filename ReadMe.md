@@ -1,5 +1,5 @@
 # Akan-names
-#### Portfolio iS website that has description of the naming in ghanian culture according to the day in which was born.It was created on 03/10/2020.
+ Akan names is website that has description of the naming in ghanian culture according to the day in which was born.It was created on 03/10/2020.
 ## Author
 By  Bernard k. Bett.
 ## Description of my portfolio
