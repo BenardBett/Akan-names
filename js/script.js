@@ -42,6 +42,7 @@ function userInput(){
       alert("Please enter a valid month");
   }else if(day=="" ||day>31 ||day<0){
       alert("Please enter a valid date");
+      //test the radio buttons and output the name according to the date of birth
   }else if(document.getElementById("male").checked==true && document.getElementById("female").checked==false){
       alert("Your Akan name is " + maleName[dob]);
   }else if(document.getElementById("male").checked==false && document.getElementById("female").checked==true){
