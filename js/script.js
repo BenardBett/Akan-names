@@ -3,7 +3,7 @@
   var femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 
-
+//calculate function for day of the week
 
 function getDay (cc,yy,mm,dd){
   return(((cc/4)-2*cc-1)+((5*yy/4))+((26*(mm+1)/10))+ dd)%7
