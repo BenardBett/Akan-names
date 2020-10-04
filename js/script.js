@@ -20,7 +20,7 @@ function userInput(){
   birthDay.setMonth(parseInt(month)-1);
   birthDay.setFullYear(parseInt(year));
   var dob = birthDay.getDay();
-
+// fuction that checks the days of the week using indexes
   if(dob===0){
     console.log(dob);
   }else if(dob===1){
