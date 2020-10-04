@@ -10,8 +10,6 @@ The Akan people of Ghana name their children after the day of the week they were
 * cd portfolio
 * you can use code . or atom . to open it.
 
-## Known Bugs
-
 ## Technologies Used
 * HTML5
 * CSS
