@@ -6,40 +6,41 @@
 
 function getDay (cc,yy,mm,dd){
   return ((((cc/19)+1*cc-1)+((5*yy/4)) + ((26*(mm+1)/10)) + dd)%7)+1
+//   return(((cc/4)-2*cc-1)+((5*yy/4))+((26*(mm+1)/10)))
 }
 function userInput(){
   var century = document.getElementById("century").value;
   var year = document.getElementById("year").value;
-  var Month = document.getElementById("month").value;
+  var month = document.getElementById("month").value;
   var day = document.getElementById("day").value;
  
   var birthDay = new Date();
   birthDay.setDate(parseInt(day));
-  birthDay.setMonth(parseInt(Month)-1);
+  birthDay.setMonth(parseInt(month)-1);
   birthDay.setFullYear(parseInt(year));
   var dob = birthDay.getDay();
 
   if(dob===0){
-      alert("Sunday");
+    console.log(dob);;
   }else if(dob===1){
       alert("Monday");
   }else if(dob===2){
-      alert("Tuesday");
+    console.log(dob);
   }else if(dob===3){
-      alert("Wednesday");
+    console.log(dob);
   }else if(dob===4){
-      alert("Thursday");
+    console.log(dob);
   }else if(dob===5){
-      alert("Friday");
+    console.log(dob);
   }else if(dob===6){
-      alert("Saturday");
+      console.log(dob);
   }
-  if(year==""||year>2056){
-      alert("insert a valid year");
-  }else if(Month=="" ||Month>12){
-      alert("Enter a valid month");
+  if(year==""||year>2020){
+      alert("please enter a valid year");
+  }else if(month=="" ||month>12){
+      alert("Please enter a valid month");
   }else if(day=="" ||day>31){
-      alert("Enter a valid month");
+      alert("Please enter a valid date");
   }else if(document.getElementById("male").checked==true && document.getElementById("female").checked==false){
       alert("Your Akan name is " + maleName[dob]);
   }else if(document.getElementById("male").checked==false && document.getElementById("female").checked==true){
